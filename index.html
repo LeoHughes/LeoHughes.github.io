@@ -22,15 +22,19 @@ title: LeoHughes's Blog
 
   <!-- container -->
   <div class="ui main text container">
-    <h2 class="ui header">最新文章</h2>
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <p>{{ post.excerpt }}</p>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for post in site.posts %}
+    <div class="card">
+      <div class="content">
+        <div class="header">{{ post.title }}</div>
+        <div class="description">{{ post.excerpt }}</div>
+      </div>
+      <div class="ui bottom attached button">
+        <a href="{{ post.url }}">
+          <i class="add icon"></i>阅读
+        </a>
+      </div>
+    </div>
+    {% endfor %}
   </div>
   <!-- container end -->
 
@@ -63,7 +67,6 @@ title: LeoHughes's Blog
         </div>
       </div>
       <div class="ui inverted section divider"></div>
-      <img src="assets/images/logo.png" class="ui centered mini image">
       <div class="ui horizontal inverted small divided link list">
         <a class="item" href="#">Site Map</a>
         <a class="item" href="#">Contact Us</a>
