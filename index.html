@@ -2,10 +2,43 @@
 layout: default
 title: LeoHughes's Blog
 ---
-　　<h2>{{ page.title }}</h2>
-　　<p>最新文章</p>
-　　<ul>
-　　　　{% for post in site.posts %}
-　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　　　{% endfor %}
-　　</ul>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- css 文件 -->
+  <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-5.5.3/foundation.min.css">
+  <!-- jQuery 库 -->
+  <script src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+  <!-- JavaScript 文件 -->
+  <script src="http://static.runoob.com/assets/foundation-5.5.3/js/foundation.min.js"></script>
+  <!-- modernizr 文件 -->
+  <script src="http://static.runoob.com/assets/foundation-5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+<div class="row">
+  <div class="medium-12 columns">
+    <div class="panel">
+      <h1>Foundation 页面</h1>
+      <p>重置窗口大小，查看效果！</p>
+      <button type="button" class="button small">I Like It!</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="medium-12 columns">
+    <p>最新文章</p>
+    <ul>
+      {% for post in site.posts %}
+      <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
