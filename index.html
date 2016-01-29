@@ -22,19 +22,21 @@ title: LeoHughes's Blog
 
   <!-- container -->
   <div class="ui main text container">
-    {% for post in site.posts %}
-    <div class="card">
-      <div class="content">
-        <div class="header">{{ post.title }}</div>
-        <div class="description">{{ post.excerpt }}</div>
+    <div class="ui cards">
+      {% for post in site.posts %}
+      <div class="card">
+        <div class="content">
+          <div class="header">{{ post.title }}</div>
+          <div class="description">{{ post.excerpt }}</div>
+        </div>
+        <div class="ui bottom attached button">
+          <a href="{{ post.url }}">
+            <i class="add icon"></i>阅读
+          </a>
+        </div>
       </div>
-      <div class="ui bottom attached button">
-        <a href="{{ post.url }}">
-          <i class="add icon"></i>阅读
-        </a>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
   <!-- container end -->
 
