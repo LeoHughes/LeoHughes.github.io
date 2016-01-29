@@ -12,8 +12,33 @@ title: LeoHughes's Blog
   <link rel="stylesheet" href="css/semantic.css">
 </head>
 <body>
+  <!-- nav -->
+  <div class="ui fixed inverted menu">
+  <div class="ui container">
+    <a href="#" class="item">Home</a>
+    <div class="ui simple dropdown item">
+      文章分类<i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="#">Link Item</a>
+        <a class="item" href="#">Link Item</a>
+        <div class="divider"></div>
+        <div class="header">Header Item</div>
+        <div class="item">
+          <i class="dropdown icon"></i>
+          Sub Menu
+          <div class="menu">
+            <a class="item" href="#">Link Item</a>
+            <a class="item" href="#">Link Item</a>
+          </div>
+        </div>
+        <a class="item" href="#">Link Item</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <div class="ui raised very padded text container segment">
+
+  <div class="ui main text container">
     <h2 class="ui header">最新文章</h2>
     <ul>
       {% for post in site.posts %}
@@ -26,4 +51,13 @@ title: LeoHughes's Blog
   </div>
 
 </body>
+<!-- jq -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!-- semantic.js -->
+<script src="js/semantic.min.js"></script>
+<script>
+  $(function(){
+
+  });
+</script>
 </html>
