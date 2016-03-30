@@ -1,2 +1,9 @@
-/**utility css**/
-.p-td-5{padding:5px 0;}
+html,body{
+  font-size: 14px;
+  font-family: '微软幼圆';
+}
+
+.ui-header{
+  background-color: #1b2032;
+  color: #fff;
+}
