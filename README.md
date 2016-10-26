@@ -1,3 +1,3 @@
-# LeoHughes.github.io
+# FEDictionary
 
-个人笔记
+前端英文词汇字典

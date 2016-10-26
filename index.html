@@ -6,10 +6,22 @@
   <title>首页</title>
   <link rel="stylesheet" href="./public/css/app.css">
   <script src="https://cdn.wilddog.com/sdk/js/2.1.2/wilddog-sync.js"></script>
+  <script src="./public/lib/vue.min.js"></script>
   <script src="./public/lib/aidesWin.min.js"></script>
 </head>
 <body>
   
+  <section>
+    <input type="text" value="" placeholder="find" v-model="searchWord" @keyup.enter="search">
+    <button type="button" @click="search">click</button>
+
+    <ul v-if="!noData">
+      <li v-for="item in result">{{item.description}}</li>
+    </ul>
+    
+    <p v-if="noData">暂无{{* searchWord}}的查询结果</p>
+  </section>
+
   <script src="./public/js/app.js"></script>
 </body>
 </html>

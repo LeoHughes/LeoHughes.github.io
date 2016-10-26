@@ -1,0 +1,20 @@
+{
+	"words": [
+		{
+			"name": "application",
+			"transContent": "应用程序",
+			"description": "部分前端框架或库会在使用前先实例化应用，在代码中一般简写为app",
+			"date": "2016/10/26",
+			"auth": "LeoHughes",
+			"github": "https://github.com/LeoHughes"
+		},
+		{
+			"name": "library",
+			"transContent": "库",
+			"description": "常用函数或方法的封装",
+			"date": "2016/10/26",
+			"auth": "LeoHughes",
+			"github": "https://github.com/LeoHughes"
+		}
+	]
+}
