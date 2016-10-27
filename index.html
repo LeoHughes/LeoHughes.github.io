@@ -55,7 +55,7 @@
           
       <div v-if="noData">
         <p>
-          暂无<strong v-text="searchWord"></strong>的查询结果，<a href="./add.html">点击添加</a>此词条信息
+          暂无<strong v-text="searchWord"></strong>的查询结果，<a :href="'./add.html?' + searchWord">点击添加</a>此词条信息
         </p>
       </div>
 

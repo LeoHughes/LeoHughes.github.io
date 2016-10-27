@@ -25,40 +25,16 @@
     </div>
   </header>
 
-  <section class="search-container">
-      <div class="search">
-        <input class="search-input" type="text" value="application" placeholder="请输入需要查找的英文单词" v-model="searchWord" @keyup.enter="search">
-          <p class="info">翻译</p>
-          <p>
-              <a href="javascript:void(0)" class="pure-button" @click="search">Translate</a>
-          </p>
-      </div>
-  </section>
+  <section class="search-container"></section>
 
-  <section class="content-wrapper {{showResult}}">
+  <section class="content-wrapper true">
     <div class="result">
-      <p>
-        <a href="javascript:void(0)" class="pure-button" @click="back">返回</a>
-      </p>
-
-      <ul class="resUl" v-if="!noData">
-        <li v-for="item in result">
-          <h2 v-text="item.name"></h2>
-          <p v-text="'[ 常见释义 ] : ' + item.transContent"></p>
-          <p v-text="'[ 程序释义 ] : ' + item.description"></p>
-          <p>
-            贡献者 : <a :href="item.github" v-text="item.auth"></a>
-          </p>
-          <p v-text="'贡献日期 : ' + item.date"></p>
-        </li>
-      </ul>
-          
-      <div v-if="noData">
-        <p>
-          暂无<strong v-text="searchWord"></strong>的查询结果，<a href="./add.html">点击添加</a>此词条信息
-        </p>
-      </div>
-
+      <form class="pure-form pure-form-aligned">
+        <div class="pure-g">
+          <label class="pure-u-1-4" for="name">name</label>
+          <input class="pure-u-3-4" type="text" name="" value="">
+        </div>
+      </form>
     </div>
   </section>
 
