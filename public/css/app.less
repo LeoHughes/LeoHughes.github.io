@@ -1,4 +1,97 @@
-.app{
+//color
+@bule: #1f8dd6;
+@font-color: #000;
+
+html,body{
+  font-family: cursive ,"Microsoft Yahei" , sans-serif;
+  font-size: 14px;
+  overflow: hidden; 
+}
+
+.pure-menu-heading{
+  color: #fff;
+}
+
+//search
+.search-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background: @bule;
+  z-index: 1;
+  overflow: hidden;    
+
+  .search {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    top: 100px; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    .search-input {
+      padding: 1rem 1.6rem;
+      width: 80%;
+      font-size: 1.2rem;
+      color: @font-color;
+      border: 3px solid white;
+      border-radius: 5px;
+      line-height: 1em;
+    } 
+
+    .info {
+      color: #fff;
+      letter-spacing: 0.05em;
+      opacity: 0.8;
+    }
+
+  }
+
 }
+
+//result
+.content-wrapper {
+    position: fixed !important;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    overflow: auto;
+    background: #fff;
+    &.true{
+      top: 10%;
+      transition: 600ms;
+    }
+    &.false{
+      top: 100%;
+      transition: 500ms;
+    }
+
+
+    .result{
+      padding: .8rem 1.2rem;
+
+      .pure-button{
+        font-size: 70%;
+      }
+
+      .resUl{
+        margin: 0 0;
+        padding: 0 0;
+        li{
+          list-style: none;
+        }
+      }
+
+    }
+
+}
+

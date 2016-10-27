@@ -11,11 +11,18 @@ var vm = new Vue({
   data: {
     searchWord: '',
     result: [],
+    showResult: false,
     noData: false
   },
   methods:{
     search: function(){
       var self = this;
+
+      if(!self.searchWord){
+        return;
+      }
+
+      self.showResult = true;
 
       ref.orderByChild('name').equalTo(self.searchWord).on("value",function(snapshot){
         var data = snapshot.val() || [];
@@ -25,6 +32,11 @@ var vm = new Vue({
         self.result = data;
 
       });
+    },
+    back: function(){
+      this.showResult = false;
+      this.searchWord = '';
+      this.result = [];
     }
   }
 });

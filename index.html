@@ -4,22 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>首页</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="./public/css/app.css">
+
   <script src="https://cdn.wilddog.com/sdk/js/2.1.2/wilddog-sync.js"></script>
   <script src="./public/lib/vue.min.js"></script>
   <script src="./public/lib/aidesWin.min.js"></script>
 </head>
 <body>
-  
-  <section>
-    <input type="text" value="" placeholder="find" v-model="searchWord" @keyup.enter="search">
-    <button type="button" @click="search">click</button>
 
-    <ul v-if="!noData">
-      <li v-for="item in result">{{item.description}}</li>
-    </ul>
-    
-    <p v-if="noData">暂无{{* searchWord}}的查询结果</p>
+  <header class="header">
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Dictionary</a>
+    </div>
+  </header>
+
+  <section class="search-container">
+      <div class="search">
+        <input class="search-input" type="text" value="application" placeholder="请输入需要查找的英文单词" v-model="searchWord" @keyup.enter="search">
+          <p class="info">翻译</p>
+          <p>
+              <a href="javascript:void(0)" class="pure-button" @click="search">Translate</a>
+          </p>
+      </div>
+  </section>
+
+  <section class="content-wrapper {{showResult}}">
+    <div class="result">
+      <p>
+        <a href="javascript:void(0)" class="pure-button" @click="back">返回</a>
+      </p>
+
+      <h2 v-text="searchWord"></h2>
+
+      <ul class="resUl" v-if="!noData">
+        <li v-for="item in result">
+          <p v-text="'[ 释义 ] : ' + item.transContent"></p>
+          <p v-text="'[ 程序释义 ] : ' + item.description"></p>
+        </li>
+      </ul>
+          
+      <p v-if="noData">暂无<span v-text="searchWord"></span>的查询结果</p>
+
+    </div>
   </section>
 
   <script src="./public/js/app.js"></script>
