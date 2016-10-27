@@ -10,6 +10,12 @@
   <script src="https://cdn.wilddog.com/sdk/js/2.1.2/wilddog-sync.js"></script>
   <script src="./public/lib/vue.min.js"></script>
   <script src="./public/lib/aidesWin.min.js"></script>
+  <!--[if lte IE 9]>
+    <script>
+      alert('什么年代了还用ie，赶紧换个浏览器再来吧！');
+      window.close();
+    </script>
+  <![end if]-->
 </head>
 <body>
 
@@ -35,11 +41,10 @@
         <a href="javascript:void(0)" class="pure-button" @click="back">返回</a>
       </p>
 
-      <h2 v-text="searchWord"></h2>
-
       <ul class="resUl" v-if="!noData">
         <li v-for="item in result">
-          <p v-text="'[ 释义 ] : ' + item.transContent"></p>
+          <h2 v-text="item.name"></h2>
+          <p v-text="'[ 常见释义 ] : ' + item.transContent"></p>
           <p v-text="'[ 程序释义 ] : ' + item.description"></p>
         </li>
       </ul>
