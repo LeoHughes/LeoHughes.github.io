@@ -1,3 +1,3 @@
-# FEDictionary
+# ProgramDictionary
 
-编程英文词汇字典
+A simple application to translate the program word.
