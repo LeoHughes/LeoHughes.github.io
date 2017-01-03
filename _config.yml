@@ -64,3 +64,5 @@ gems:
   - jekyll-sitemap
   - jemoji
 permalink: posts/:slug
+
+theme: jekyll-theme-architect
