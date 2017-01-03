@@ -65,4 +65,4 @@ gems:
   - jemoji
 permalink: posts/:slug
 
-theme: jekyll-theme-architect
+theme: jekyll-theme-cayman
