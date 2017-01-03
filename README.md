@@ -1,3 +1,3 @@
-# ProgramDictionary
+# Personal Blog
 
-A simple application to translate the program word.
+Welcome to Leo Hughes's blog.
