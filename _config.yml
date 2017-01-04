@@ -6,7 +6,7 @@ reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/doom.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+tiled_bg:           false
 locale:             en_US
 url:                http://leohughes.github.io
 
@@ -29,12 +29,10 @@ sass:
 disqus_shortname:   taylantatli
 
 # Social
-# if you don't have any of social below, comment the line.
 
 email:              zhihy123@qq.com
 github-url:         https://github.com/LeoHughes/
 steam:              zhihy123
-#weibo:             username
 
 # Gems
 gems:
