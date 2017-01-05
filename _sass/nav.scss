@@ -2,7 +2,7 @@
 	width: 100%;
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 0;
 	z-index: 1000;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
@@ -10,6 +10,7 @@
 	-webkit-perspective-origin: 50% 200%;
 	-moz-perspective-origin: 50% 200%;
 	perspective-origin: 50% 200%;
+    text-align: right;
 	@media #{$notsmall} {
 		position: fixed;
 		max-width: 175px;
@@ -18,7 +19,7 @@
 	}
 	button {
 		top: 0;
-		right: 0;
+		left: 0;
 		background: $comp-color;
 		border: none;
 		width: 48px;
@@ -28,10 +29,10 @@
 		position: relative;
 		cursor: pointer;
 		outline: none;
-		@include border-radius(0,3px,0,0);
+		@include border-radius(0,0,5px,0);
 		opacity: 0.6;
 		@media #{$notsmall} {
-			@include border-radius(3px,3px,3px,3px);
+			@include border-radius(5px,5px,5px,5px);
 		}
 	}
 	button:hover,
