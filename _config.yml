@@ -4,7 +4,7 @@ bio:                "Welcom to Leo Hughes's blog."
 description:        "this is Leo Hughes's blog."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/logo.jpg'
 background:         'assets/img/doom.jpg'
 tiled_bg:           false
 locale:             en_US
