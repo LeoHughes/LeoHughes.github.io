@@ -28,8 +28,8 @@ layout: compress
                         <li class="wow fadeInUp" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                             <p>{{ post.excerpt }}</p>
-                            <p class="date"><small>{{ post.date | date_to_string }}</small></p>
-                            <a class="readMore" href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+                            <p><small>{{ post.date | date_to_string }}</small></p>
+                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
                         </li>
                     </ul>
                         {% endif %}
