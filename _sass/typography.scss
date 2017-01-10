@@ -62,6 +62,12 @@ h3.title a {
 		p {
 			font-weight: lighter;
 			@include font-rem(16);
+            &.date{
+                text-align: right;
+            }
+            &.readMore{
+                text-align: center;
+            }
 		}
 	}
 }
