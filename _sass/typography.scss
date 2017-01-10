@@ -58,13 +58,13 @@ h3.title a {
             &:hover {
                 color: $red;
             }
-            &.readMore{
-                text-align: right;
-            }
 		}
 		p {
 			font-weight: lighter;
 			@include font-rem(16);
+            &.readMore{
+                text-align: right;
+            }
 		}
 	}
 }

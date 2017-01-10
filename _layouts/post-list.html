@@ -29,7 +29,9 @@ layout: compress
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                             <p>{{ post.excerpt }}</p>
                             <p><small>{{ post.date | date_to_string }}</small></p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+                            <p class="readMore">
+                                <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+                            </p>
                         </li>
                     </ul>
                         {% endif %}
