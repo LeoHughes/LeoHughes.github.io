@@ -21,7 +21,7 @@ body {
 	background-attachment: fixed;
 	@media #{$small} {
 	    background-image: none !important;
-		background: $whitesmoke ;
+		background: $white;
 	}
 }
 * {
@@ -83,8 +83,6 @@ body {
 	@include transition(.5s);
 	@media #{$small} {
 		width: 100%;
-        padding: 2rem;
-        margin: 4rem auto;
 	    box-shadow: none;
 	}
 	@media #{$medium} {
