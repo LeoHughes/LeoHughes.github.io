@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FE-resource-1"
+title:  "FE-resource-2"
 date:   2016-02-06
 excerpt: "收集的前端资源（二）"
 project: true
