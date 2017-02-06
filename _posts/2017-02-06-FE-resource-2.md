@@ -14,4 +14,18 @@ tag:
 
     1. Angular
 
-        - [angular github](https://github.com/angular/angular)
+        - [Angular Github](https://github.com/angular/angular)
+
+        - [Angular 中文站](https://angular.cn/)
+
+        - [Angular 中文社区](http://www.angularjs.cn/)
+
+        - [Angular 菜鸟教程](http://www.runoob.com/angularjs/angularjs-tutorial.html)
+
+    2. Vue
+
+        - [Vue 1.0文档](http://v1-cn.vuejs.org/guide/)
+
+        - [Vue 2.0文档](https://vuefe.cn/)
+
+        - [Vue相关资源 Github](https://github.com/vuejs/awesome-vue)
