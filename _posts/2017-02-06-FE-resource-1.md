@@ -2,7 +2,7 @@
 layout: post
 title:  "FE-resource-1"
 date:   2016-02-06
-excerpt: "收集整理的一些前端资源。"
+excerpt: "前端自动化资源"
 project: true
 tag:
 - 前端资源 
@@ -37,8 +37,29 @@ tag:
 - 模块管理工具
 
     1. [npm](https://www.npmjs.com/)
+
     2. [淘宝npm镜像](http://npm.taobao.org/)
+
     3. [browserify](http://browserify.org/)
+
     4. [bower](https://bower.io/)
+
     5. [requirejs](http://requirejs.org/)
+
     6. [requirejs中文网](http://www.requirejs.cn/)
+
+- css预处理器
+
+    1. sass
+
+        - [sass-lang.com](http://sass-lang.com/)
+
+        - [sass中文文档](http://sass.bootcss.com/)
+
+    2. less
+
+        - [lesscss.org](http://lesscss.org/)
+
+        - [less中文网](http://lesscss.cn/)
+
+    3. [stylus](http://stylus-lang.com/)
