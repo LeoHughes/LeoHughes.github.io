@@ -31,3 +31,15 @@ tag:
         - [Vue相关资源 Github](https://github.com/vuejs/awesome-vue)
 
     3. React
+
+        - [React官方文档](https://facebook.github.io/react/)
+
+        - [React中文论坛](http://react-china.org/)
+
+        - [React入门教程](https://github.com/ruanyf/react-demos)
+
+        - [React菜鸟教程](http://www.runoob.com/react/react-tutorial.html)
+
+        - [ANT DESIGN(React框架)](https://ant.design/index-cn)
+
+        - [Amaze UI React](http://amazeui.org/react/)
