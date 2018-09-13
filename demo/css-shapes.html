@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		.triangle-up {
+			width: 0;
+			height: 0;
+			border-width: 100px;
+			border-style: solid;
+			border-color: transparent transparent red transparent;
+		}
+
+		.triangle-down {
+			width: 0;
+			height: 0;
+			border-width: 100px;
+			border-style: solid;
+			border-color: red transparent transparent transparent;
+		}
+
+		.pieChart {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 100px;
+			border-color: red green blue black;
+			border-radius: 100px;
+		}
+
+		.sector {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 100px;
+			border-color: transparent transparent blue transparent;
+			border-radius: 100px;
+		}
+
+		.trapezoid {
+			width: 100px;
+			height: 0;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+			border-bottom: 100px solid red;
+		}
+	</style>
+</head>
+
+<body>
+	<p>三角形</p>
+	<div>
+		<div class="triangle-up"></div>
+		<br>
+		<div class="triangle-down"></div>
+	</div>
+
+	<p>饼图</p>
+	<div>
+		<div class="pieChart"></div>
+	</div>
+
+	<p>扇形</p>
+	<div>
+		<div class="sector"></div>
+	</div>
+
+	<p>梯形</p>
+	<div>
+		<div class="trapezoid"></div>
+	</div>
+</body>
+
+</html>
